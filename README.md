@@ -1,8 +1,6 @@
 # Relay Fragment Container
 
-Empezamos a ver la estructura de una aplicacion Relay Modern. Nuestro stack completo esta compuesto en el backend por un servidor Express/Graphql que usa MongoDB como database a travez del servicio cloud mLab. En el frontend: React, Relay Modern, React Router y React Bootstrap.
-
-Vimos tambien el uso del componente FragmentContainer de relay y su relacion con QueryRenderer visto en la clase 11.
+Continuamos el desarrollo del cliente Relay Modern. En este caso explorando la paginacion de connections usando el PaginationContainer de Relay. 
 
 ## Correr servidor localmente
 
@@ -56,13 +54,9 @@ yarn start
 
 - https://facebook.github.io/relay/docs/relay-modern.html
 
-### Relay QueryRenderer
+### Relay PaginationContainer
 
-- https://facebook.github.io/relay/docs/query-renderer.html
-
-### Relay FragmentContainer
-
-- https://facebook.github.io/relay/docs/fragment-container.html
+- https://facebook.github.io/relay/docs/pagination-container.html
 
 ### Tools para implementacion de un server GraphQL compatible con Relay
 
