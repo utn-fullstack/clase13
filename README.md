@@ -1,4 +1,4 @@
-# Relay Fragment Container
+# Relay Pagination Container
 
 Continuamos el desarrollo del cliente Relay Modern. En este caso explorando la paginacion de connections usando el PaginationContainer de Relay. 
 
