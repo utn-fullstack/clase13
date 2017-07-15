@@ -20,7 +20,9 @@ const CategoryMenu = ({ books, match }) =>
     environment={environment}
     query={categoryQuery}
     render={({ error, props }) => {
-      if (error) return <ErrorAlert error={ErrorAlert} />;
+      console.log(error);
+
+      if (error) return <ErrorAlert error={error} />;
 
       return (
         <ReactPlaceholder rows={7} ready={props} showLoadingAnimation={true}>

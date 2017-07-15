@@ -66,12 +66,7 @@ class BooksList extends Component {
 
           {relay.hasMore() &&
             !loading &&
-            <ReactScrollPagination
-              fetchFunc={() => this.loadMore()}
-              excludeElement=".navbar"
-              excludeHeight={50}
-              triggerAt={300}
-            />}
+            <ReactScrollPagination fetchFunc={() => this.loadMore()} excludeElement=".navbar" triggerAt={300} />}
 
           {loading && <LoadingSpinner />}
 

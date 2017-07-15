@@ -2,7 +2,7 @@ import React from 'react';
 import BooksAdmin from './BooksAdmin';
 import CategoriesAdmin from './CategoriesAdmin';
 import { Grid, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
-import { Route, Redirect, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const AdminPage = props =>

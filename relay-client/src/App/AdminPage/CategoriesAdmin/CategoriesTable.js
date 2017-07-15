@@ -5,6 +5,7 @@ import environment from 'App/environment';
 import LoadingSpinner from 'Common/LoadingSpinner';
 import ErrorAlert from 'Common/ErrorAlert';
 import CategoryRow from './CategoryRow';
+import PropTypes from 'prop-types';
 
 const categoriesTableQuery = graphql`
   query CategoriesTableQuery {
@@ -20,22 +21,25 @@ const CategoriesTable = ({ categories }) =>
       <thead>
         <tr>
           <th>#</th>
-          <th>Label</th>
+          <th>Labellllllll</th>
           <th>Actions</th>
         </tr>
       </thead>
       <tbody>
-        {categories.map(item => <CategoryRow category={item} />)}
+        {categories.map((item, key) => <CategoryRow category={item} key={key} />)}
       </tbody>
     </Table>
   </Col>;
+
+CategoriesTable.propTypes = {
+  categories: PropTypes.array.isRequired
+};
 
 const CategoriesTableRenderer = ({ match }) =>
   <QueryRenderer
     environment={environment}
     query={categoriesTableQuery}
     variables={{
-      categoryId: match && match.params.id,
       count: 12
     }}
     render={({ error, props }) => {

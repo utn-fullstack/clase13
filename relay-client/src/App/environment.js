@@ -36,6 +36,7 @@ function fetchQuery(operation, variables, cacheConfig, uploadables) {
       return response.json();
     })
     .then(r => promiseDelay(3000, r));
+  //.then(r => Promise.reject(new Error('Wooo')));
 }
 
 // Crea la capa de red de Relay usando la funcion fetchQuery

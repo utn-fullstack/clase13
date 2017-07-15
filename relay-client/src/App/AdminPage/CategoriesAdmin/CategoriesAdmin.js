@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid, PageHeader, Row, Col, Button } from 'react-bootstrap';
+import { PageHeader, Row, Col, Button } from 'react-bootstrap';
 import CategoriesTable from './CategoriesTable';
 import styles from './CategoriesAdmin.css';
 
-const CategoriesAdmin = props =>
+const CategoriesAdmin = () =>
   <div>
     <PageHeader>
       Categories admin <small>Create, edit and remove Categories</small>
